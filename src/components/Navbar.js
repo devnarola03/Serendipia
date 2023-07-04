@@ -7,7 +7,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}>
       <div className="container-fluid">
-        <a className={`navbar-brand ${isDarkMode ? 'text-dark' : 'text-light'}`} href="/"> <img className='pe-2' src="/icons8-text-justicon-lineal-color-32.png " alt="" />
+        <a className={`navbar-brand ${isDarkMode ? 'text-dark' : 'text-light'}`} href="/"> <img className='pe-2' src="/public/icons8-text-justicon-lineal-color-32.png" alt="" />
             {title}
         </a>
         <button
