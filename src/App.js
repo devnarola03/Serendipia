@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState("moon");
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type) => {
@@ -21,19 +21,19 @@ function App() {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
-    document.body.style.background = isDarkMode ? 'white' : 'grey';
+    document.body.style.background = isDarkMode ? 'black' : 'white';
     showAlert("Mode is Activated", "success")
   };
 
   const TextForms = createBrowserRouter([
     {
       path: "/",
-      element: <TextForm showAlert={showAlert} heading="Enter the TexT to Analyze Below" isDarkMode={isDarkMode} />,
+      element: <TextForm showAlert={showAlert} heading="Enter the Text to Analyze Below" isDarkMode={isDarkMode} />,
       errorElement: <ErrorPage />,
 
     }, {
       path: "/about",
-      element: <About />, errorElement: <ErrorPage />,
+      element: <About isDarkMode={isDarkMode} />, errorElement: <ErrorPage />,
 
     }
   ]);

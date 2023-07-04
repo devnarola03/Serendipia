@@ -41,3 +41,56 @@
 .center {
   padding-left: 1120px;
 }
+.button {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  animation: pulse 1s infinite;
+  transition: .3s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+.height-100{
+  height: 100vh;
+}
+.navbg{
+  background-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(68,32,39,1) 48%, rgba(203,4,43,1) 100%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: sticky;
+}
+
+/* .container {
+  background: linear-gradient(
+    124deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  color: white;
+} */

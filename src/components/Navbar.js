@@ -5,10 +5,11 @@ export default function Navbar(props) {
   const { title, isDarkMode, toggleDarkMode } = props;
 
   return (
-    <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-light bg-light' : 'navbar-dark bg-dark'}`}>
+    <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark navbg' : 'navbar-light navbg'}`}>
       <div className="container-fluid">
-        <a className={`navbar-brand ${isDarkMode ? 'text-dark' : 'text-light'}`} href="/"> <img className='pe-2' src="/public/icons8-text-justicon-lineal-color-32.png" alt="" />
-            {title}
+        <a className={`navbar-brand ${isDarkMode ? 'text-dark' : 'text-light'} `} href="/"> 
+          <img src="/public/img32.png" alt="" />
+          {title}
         </a>
         <button
           className="navbar-toggler"
@@ -41,7 +42,7 @@ export default function Navbar(props) {
               )}
             </li>
           </ul>
-        
+
         </div>
       </div>
     </nav>
