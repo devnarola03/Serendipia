@@ -88,13 +88,6 @@ export default function TextForm(props) {
                     <button
                         disabled={text.length === 0}
                         className="btn button mx-1 my-1 ms-3"
-                        onClick={clear}
-                    >
-                        Clear
-                    </button>
-                    <button
-                        disabled={text.length === 0}
-                        className="btn button mx-1 my-1 ms-3"
                         onClick={lowercase}
                     >
                         Convert to Lowercase
@@ -113,6 +106,7 @@ export default function TextForm(props) {
                     >
                         Remove Extra Space
                     </button>
+                    <button disabled={text.length === 0} className="btn button mx-1 my-1 ms-3" onClick={clear}>Clear</button>
                 </form>
 
                 <h2>Your Text Summary</h2>

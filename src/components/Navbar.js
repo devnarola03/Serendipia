@@ -8,7 +8,7 @@ export default function Navbar(props) {
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark navbg' : 'navbar-light navbg'}`}>
       <div className="container-fluid">
         <a className={`navbar-brand ${isDarkMode ? 'text-dark' : 'text-light'} `} href="/"> 
-          <img src="/public/img32.png" alt="" />
+          <img src="/img32.png" alt="" />
           {title}
         </a>
         <button
@@ -27,6 +27,11 @@ export default function Navbar(props) {
             <li className="nav-item">
               <a className={`nav-link ${isDarkMode ? 'text-dark' : 'text-light'}`} aria-current="page" href="/">
                 Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className={`nav-link ${isDarkMode ? 'text-dark' : 'text-light'}`} aria-current="page" target='blank' href="https://www.livechat.com/typing-speed-test/#/">
+                Test Typing Speed
               </a>
             </li>
             <li className="nav-item">
